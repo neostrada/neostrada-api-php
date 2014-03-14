@@ -72,10 +72,11 @@ print_r($API->fetch());
  */
 $API->prepare('register', array(
 	'domain'	=> 'neostrada',
-	'extension' => 'nl',
+	'extension'	=> 'nl',
 	'holderid'	=> '[holderid]',
 	'period'	=> 1,
-	'webip'		=> '127.0.0.1' // leave this empty to use the Neostrada's default IP address
+	'webip'		=> '127.0.0.1', // leave this empty to use the Neostrada's default IP address
+	'packageid'	=> 0 // optional package ID to add a Neostrada hosting package, contact us for the correct IDs
 ));
 $API->execute();
 print_r($API->fetch());
@@ -84,7 +85,7 @@ print_r($API->fetch());
  */
 $API->prepare('register2', array(
 	'domain'	=> 'neostrada',
-	'extension' => 'nl',
+	'extension'	=> 'nl',
 	'holderid'	=> '[holderid]',
 	'period'	=> 1,
 	'packageid'	=> 0, // optional package ID to add a Neostrada hosting package, contact us for the correct IDs
