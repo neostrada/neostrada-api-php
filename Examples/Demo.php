@@ -113,6 +113,7 @@ $API->prepare('transfer2', array(
 	'domain'	=> 'neostrada',
 	'extension' => 'nl',
 	'authcode'	=> 'bleEEfrff!@',
+	'holderid'	=> '[holderid]',
 	'webip'		=> '',
 	'ns1'		=> 'ns1.neostrada.nl',
 	'ns2'		=> 'ns2.neostrada.nl',
