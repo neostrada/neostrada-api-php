@@ -61,6 +61,10 @@ $API->execute();
 print_r($API->fetch());
 /**
  * Get holders (optionally filtered by holderids)
+ * It is required to also include empty parameters in a request. 
+ * For example, getholders has the optional 'holderids' parameter. 
+ * If you wish to retrieve ALL holders, create the request and set 'holderids' to an empty string.
+ * EXAMPLE 'holderids' => ''
  */
 $API->prepare('getholders', array(
 	'holderids'	=> '1,2,3' // Comma separated list with holder's IDs
