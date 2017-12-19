@@ -92,8 +92,8 @@ $API->prepare('register2', array(
 	'extension'	=> 'nl',
 	'holderid'	=> '[holderid]',
 	'period'	=> 1,
-	'packageid'	=> 0, // optional package ID to add a Neostrada hosting package, contact us for the correct IDs
 	'webip'		=> '127.0.0.1',
+	'packageid'	=> 0, // optional package ID to add a Neostrada hosting package, contact us for the correct IDs
 	'ns1'		=> 'ns1.neostrada.nl',
 	'ns2'		=> 'ns2.neostrada.nl',
 	'ns3'		=> 'ns3.neostrada.nl'
